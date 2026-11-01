@@ -1,3 +1,47 @@
 # MathCNC
-A G-code generator capable of translating mathematical descriptions—whether functional or parametric—into instructions for a CNC plotter running GRBL firmware. This program has no external dependencies and requires only a Python 3.8+ environment. The code was written by a student in the 10th-grade engineering and technology track at School No. 151 in Krasnoyarsk.
+# MathCNC
 
+[![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)](#)
+
+Генератор G-кода, который превращает математические функции и
+параметрические кривые в управляющие команды для ЧПУ-плоттера
+с прошивкой **GRBL**. Внешних зависимостей нет — нужен только
+Python 3.8+.
+
+> Код написан учеником 10 класса инженерно-технологического направления
+> школы № 151, г. Красноярск, в рамках итогового проекта.
+
+[English version →](README.en.md)
+
+![Скриншот программы](docs/screenshot.png)
+
+## Что умеет
+
+- **Строит графики** любых математических и параметрических функций.
+  По умолчанию — окружность: `x(t) = cos(t)`, `y(t) = sin(t)`.
+- **Корректно обрабатывает разрывы** — например, параболу с выколотой
+  точкой: `x(t) = t`, `y(t) = t**2 * (t-2)/(t-2)` — точка (2; 4) будет
+  отмечена кружком и не нарисуется.
+- **Симулирует и показывает G-код** до запуска на станке: видна каждая
+  строка, подсвечивается текущая команда, есть анимация отрисовки.
+- **Настраивает оформление:** единичный отрезок, подача, размер рабочего
+  поля, положение рисунка в поле (виджет 3×3), дополнительный сдвиг,
+  рисование осей и подпись функции.
+- **Экспортирует `.gcode`** одной кнопкой.
+
+## Как запустить
+
+### Вариант 1: готовый `.exe` (Windows)
+
+Скачайте `MathCNC.exe` из [последнего релиза](../../releases/latest) и
+запустите двойным кликом. Python на компьютер ставить не нужно.
+
+### Вариант 2: из исходников
+
+```bash
+git clone https://github.com/slabnin-droid/MathCNC.git
+cd MathCNC
+python mathcnc.py            # графический режим
+python mathcnc.py --cli      # консольный режим
