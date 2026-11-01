@@ -161,10 +161,10 @@ Z_UP   = 10.0   # перо поднято
 
 Готовые `.gcode`-файлы лежат в папке [`examples/`](examples/):
 
-- [`heart.gcode`](examples/heart.gcode) — сердце (параметрическая кривая)
-- [`sine.gcode`](examples/sine.gcode) — синусоида
-- [`butterfly.gcode`](examples/butterfly.gcode) — бабочка
-- [`parabola-hole.gcode`](examples/parabola-hole.gcode) — парабола
+- [`heart.gcode`](examples/Heart.gcode) — сердце (параметрическая кривая)
+- [`sine.gcode`](examples/Sine.gcode) — синусоида
+- [`butterfly.gcode`](examples/Butterfly.gcode) — бабочка
+- [`parabola-hole.gcode`](examples/Qadratuc.gcode) — парабола
   с выколотой точкой (демонстрирует обработку разрывов)
 
 ---
