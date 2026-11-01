@@ -164,7 +164,7 @@ Z_UP   = 10.0   # перо поднято
 - [`heart.gcode`](examples/Heart.gcode) — сердце (параметрическая кривая)
 - [`sine.gcode`](examples/Sine.gcode) — синусоида
 - [`butterfly.gcode`](examples/Butterfly.gcode) — бабочка
-- [`parabola-hole.gcode`](examples/Qadratuc.gcode) — парабола
+- [`parabola-hole.gcode`](examples/Parabola-hole.gcode) — парабола 
   с выколотой точкой (демонстрирует обработку разрывов)
 
 ---
