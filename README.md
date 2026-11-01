@@ -15,7 +15,6 @@ Python 3.8+.
 
 [English version →](README.en.md)
 
-![Скриншот программы](docs/screenshot.png)
 
 ---
 
